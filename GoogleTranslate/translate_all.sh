@@ -1,5 +1,10 @@
 #!/bin/bash
 
+if [ ! -f input.xml ]; then
+  echo "Place source file in the current folder, naming it input.xml"
+  exit
+fi
+
 if [ -z "$1" ]; then
   echo "Usage $0 /path/to/src/main/res"
   exit
