@@ -11,17 +11,22 @@ import requests
 import os
 import xml.etree.ElementTree as ET
 from io import BytesIO
- 
-print("Enter the original file language code en etc.")
-INPUTLANGUAGE = input()
- 
-print("Enter the output language code tr etc.")
-OUTPUTLANGUAGE  = input()
+import sys
 
-print ("Enter the in filename strings.xml etc.")
-INFILE = input()
-print("Enter the out filename strings_new_translated.xml etc.")
-OUTFILE = input()
+#print("Enter the original file language code en etc.")
+#INPUTLANGUAGE = input()
+INPUTLANGUAGE = sys.argv[1]
+ 
+#print("Enter the output language code tr etc.")
+#OUTPUTLANGUAGE  = input()
+OUTPUTLANGUAGE  = sys.argv[2]
+
+#print ("Enter the in filename strings.xml etc.")
+#INFILE = input()
+INFILE = sys.argv[3]
+#print("Enter the out filename strings_new_translated.xml etc.")
+#OUTFILE = input()
+OUTFILE = sys.argv[4]
 
 def translate(to_translate, to_language="auto", language="auto"):
  r = requests.get("http://translate.google.com/m?hl=%s&sl=%s&q=%s"% (to_language, language, to_translate.replace(" ", "+")))

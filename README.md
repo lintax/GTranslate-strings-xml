@@ -1,3 +1,15 @@
+# Google translate provided xml file to all languages in your project 
+
+1. clone
+2. put file with text to be translated in input.xml
+3. run translate_all.sh /path/to/your/project/src/main/res - it will get list of languages by searching folders named strings-b+XX
+4. paste contents of translated strings_XX.xml files to the files you maintain the translation
+5. profit!
+
+Requires python3
+
+---
+
 # Google Translate for strings.xml (Android Studio , etc.)
 
 Provides python3.5 scripts to translate strings.xml file for any other language automaticly. This Project is forked from https://github.com/Ra-Na/GTranslate-strings-xml you can check the original project there.
