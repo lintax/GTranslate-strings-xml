@@ -177,3 +177,7 @@ The Google translate script using this in background:
 #   yo          Yoruba
 #   zu          Zulu
 ```
+
+---
+
+Original author's version is available online at https://asrt.gluege.boerde.de/
