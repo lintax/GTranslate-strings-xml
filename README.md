@@ -8,6 +8,16 @@
 
 Requires python3
 
+## Command line args
+
+translate_all.sh `pathToRes` `sourceLang` `inputXmlFile`
+
+```
+pathToRes      full path to /path/to/your/project/src/main/res of your project (a folder where all strings-b-* folders are located)
+sourceLang     language considered as being used in input file. Defaults to en
+inputXmlFile   path to file containing source strings to be translated 
+```
+
 ## Language codes for reference
 
 Reference only, check google translate page before use. 
