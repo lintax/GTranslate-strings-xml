@@ -1,32 +1,18 @@
-# Google translate provided xml file to all languages in your project 
+# Google Translate your strings.xml updates to all languages in your project 
 
 1. clone
-2. put file with text to be translated in input.xml
-3. run translate_all.sh /path/to/your/project/src/main/res - it will get list of languages by searching folders named strings-b+XX
-4. paste contents of translated strings_XX.xml files to the files you maintain the translation
+2. put file with text to be translated in file named `input.xml`
+3. run `./translate_all.sh /path/to/your/project/src/main/res` - it will get list of languages by searching folders matching `strings-b+XX` pattern
+4. paste contents of translated `strings_XX.xml` files to the files you maintain the translation
 5. profit!
 
 Requires python3
 
----
+## Language codes for reference
 
-# Google Translate for strings.xml (Android Studio , etc.)
+Reference only, check google translate page before use. 
 
-Provides python3.5 scripts to translate strings.xml file for any other language automaticly. This Project is forked from https://github.com/Ra-Na/GTranslate-strings-xml you can check the original project there.
-
-# How to Install?
-
-1) Make sure you installed Python on your machine. If you dont get it from <a href="https://www.python.org/downloads/">here</a> 
-2) Run "python gtranslate.py"
-3) Fill the questions with your data.
-3) Output file will be created automaticly.
-
-# Using
-The Google translate script using this in background:
-
-```python
-### LANGUAGE CODES FOR REFERENCE
-
+```
 #   af          Afrikaans
 #   ak          Akan
 #   sq          Albanian
@@ -36,10 +22,8 @@ The Google translate script using this in background:
 #   az          Azerbaijani
 #   eu          Basque
 #   be          Belarusian
-#   bem         Bemba
 #   bn          Bengali
 #   bh          Bihari
-#   xx-bork     Bork, bork, bork!
 #   bs          Bosnian
 #   br          Breton
 #   bg          Bulgarian
@@ -47,14 +31,12 @@ The Google translate script using this in background:
 #   ca          Catalan
 #   chr         Cherokee
 #   ny          Chichewa
-#   zh-CN       Chinese (Simplified)
-#   zh-TW       Chinese (Traditional)
+#   zh          Chinese (Simplified)
 #   co          Corsican
 #   hr          Croatian
 #   cs          Czech
 #   da          Danish
 #   nl          Dutch
-#   xx-elmer    Elmer Fudd
 #   en          English
 #   eo          Esperanto
 #   et          Estonian
@@ -64,17 +46,14 @@ The Google translate script using this in background:
 #   fi          Finnish
 #   fr          French
 #   fy          Frisian
-#   gaa         Ga
 #   gl          Galician
 #   ka          Georgian
 #   de          German
 #   el          Greek
 #   gn          Guarani
 #   gu          Gujarati
-#   xx-hacker   Hacker
 #   ht          Haitian Creole
 #   ha          Hausa
-#   haw         Hawaiian
 #   iw          Hebrew
 #   hi          Hindi
 #   hu          Hungarian
@@ -90,21 +69,16 @@ The Google translate script using this in background:
 #   kk          Kazakh
 #   rw          Kinyarwanda
 #   rn          Kirundi
-#   xx-klingon  Klingon
 #   kg          Kongo
 #   ko          Korean
-#   kri         Krio (Sierra Leone)
 #   ku          Kurdish
-#   ckb         Kurdish (Soranî)
 #   ky          Kyrgyz
 #   lo          Laothian
 #   la          Latin
 #   lv          Latvian
 #   ln          Lingala
 #   lt          Lithuanian
-#   loz         Lozi
 #   lg          Luganda
-#   ach         Luo
 #   mk          Macedonian
 #   mg          Malagasy
 #   ms          Malay
@@ -112,13 +86,9 @@ The Google translate script using this in background:
 #   mt          Maltese
 #   mi          Maori
 #   mr          Marathi
-#   mfe         Mauritian Creole
 #   mo          Moldavian
 #   mn          Mongolian
-#   sr-ME       Montenegrin
 #   ne          Nepali
-#   pcm         Nigerian Pidgin
-#   nso         Northern Sotho
 #   no          Norwegian
 #   nn          Norwegian (Nynorsk)
 #   oc          Occitan
@@ -126,22 +96,17 @@ The Google translate script using this in background:
 #   om          Oromo
 #   ps          Pashto
 #   fa          Persian
-#   xx-pirate   Pirate
 #   pl          Polish
-#   pt-BR       Portuguese (Brazil)
-#   pt-PT       Portuguese (Portugal)
 #   pa          Punjabi
 #   qu          Quechua
 #   ro          Romanian
 #   rm          Romansh
-#   nyn         Runyakitara
 #   ru          Russian
 #   gd          Scots Gaelic
 #   sr          Serbian
 #   sh          Serbo-Croatian
 #   st          Sesotho
 #   tn          Setswana
-#   crs         Seychellois Creole
 #   sn          Shona
 #   sd          Sindhi
 #   si          Sinhalese
@@ -149,7 +114,6 @@ The Google translate script using this in background:
 #   sl          Slovenian
 #   so          Somali
 #   es          Spanish
-#   es-419      Spanish (Latin American)
 #   su          Sundanese
 #   sw          Swahili
 #   sv          Swedish
@@ -160,8 +124,6 @@ The Google translate script using this in background:
 #   th          Thai
 #   ti          Tigrinya
 #   to          Tonga
-#   lua         Tshiluba
-#   tum         Tumbuka
 #   tr          Turkish
 #   tk          Turkmen
 #   tw          Twi
@@ -177,7 +139,4 @@ The Google translate script using this in background:
 #   yo          Yoruba
 #   zu          Zulu
 ```
-
----
-
-Original author's version is available online at https://asrt.gluege.boerde.de/
+Original author's file-by-file translation tool is available [online](https://asrt.gluege.boerde.de/)
